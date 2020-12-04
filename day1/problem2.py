@@ -1,6 +1,6 @@
 nums = []
 
-for line in open("input.py"):
+for line in open("input.txt"):
     val = line.split()[0]
     nums.append(int(val))
 
@@ -11,4 +11,3 @@ for idx, x in enumerate(nums):
             z = nums[num2]
             if x + y + z == 2020:
                 print("The numbers are %d and %d and %d which multiply to: %d", x, y, z, x*y*z)
-            
